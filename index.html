@@ -5,95 +5,110 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Skvělá cukrárna (standarní obtížnost)</title>
 
-	<!-- Naše vlastní CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<!-- Hlavička -->
-		<img src="images/logo.svg" alt="logo Skvělá cukrárna">
+<header class="hlavicka">
+		<img class="cukrarna" src="images/logo.svg" alt="logo Skvělá cukrárna">
 
-		<ul>
-			<li><a href="#">Nabídka dortů</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">O nás</a></li>
-			<li><a href="#">Kontakt</a></li>
-			<li><a href="#">Online objednávka</a></li>
+		<ul class="menu">
+			<li class="polozka"><a href="#">Nabídka dortů</a></li>
+			<li class="polozka"><a href="#">Blog</a></li>
+			<li class="polozka"><a href="#">O nás</a></li>
+			<li class="polozka"><a href="#">Kontakt</a></li>
+			<li class="polozka"><a href="#">Online objednávka</a></li>
 		</ul>
+</header>
 
 
 
-
-	<!-- Hero sekce s obrázkem a hlavním nadpisem -->
-		<h1>Sladké potěšení z&nbsp;kvalitních surovin</h1>
-
-		<p>
+	
+	<section class="hero">
+					<h1>Sladké potěšení z&nbsp;kvalitních surovin</h1>
+			<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-		</p>
+			</p>
+	</section>
 
 
-
-
-	<!-- sekce Vítejte v naší cukrárně -->
-		<!-- levý sloupec -->
+	<section class="vitejte">
+		<div class="vitejte obsah">
+		<div class="levy">
 			<h2>Vítejte v naší cukrárně</h2>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minima reiciendis beatae, quo consequatur blanditiis molestiae laborum, at porro ipsum soluta temporibus.</p>
 
 			<a href="#">Naše výrobky</a>
-
-		<!-- pravý sloupec -->
+		</div>	
+		<div class="pravy">
 			<img src="images/cukrarka.jpg" alt="cukrářka">
+		</div>
+		</div>
+	</section>
 
 
-
-
-	<!-- sekce Dnešní nabídka -->
-		<h2>Dnešní nabídka</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-		<!-- produkt 1 -->
-			<img src="images/dort.jpg" alt="Šlehačkový dort s malinami">
-			<h3>Malinový dort</h3>
+	<section class="nabidka">
+		<div class="produkty">
+			<h2>Dnešní nabídka</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			<div class="produktflex">
+				<div class="produkt1">
+					<img src="images/dort.jpg" alt="Šlehačkový dort s malinami">
+					<div class="text">
+					<h3>Malinový dort</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+				<div class="produkt2">
+					<img src="images/livance.jpg" alt="Lívance s ovocem">
+					<div class="text">
+					<h3>Lívance s ovocem</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="produkt3">
+					<img src="images/kolac.jpg" alt="Dýňový koláč">
+					<div class="text">
+					<h3>Dýňový koláč</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="produkt4">
+					<img src="images/buchticka.jpg" alt="Buchtička s polevou">
+					<div class="text">
+					<h3>Buchtička s polevou</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<!-- produkt 2 -->
-			<img src="images/livance.jpg" alt="Lívance s ovocem">
-			<h3>Lívance s ovocem</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-		<!-- produkt 3 -->
-			<img src="images/kolac.jpg" alt="Dýňový koláč">
-			<h3>Dýňový koláč</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-		<!-- produkt 4 -->
-			<img src="images/buchticka.jpg" alt="Buchtička s polevou">
-			<h3>Buchtička s polevou</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-
-
-
-
-	<!-- sekce Náš přístup k pečení -->
-		<!-- levý sloupec -->
+	<section class="pristupkpeceni">
+		<div class="naspristup">
+		<div class="levysloupec">
 			<img src="images/peceni.jpg" alt="pečení">
-
-		<!-- pravý sloupec -->
+		</div>
+		<div class="pravysloupec">
 			<h2>Náš přístup k pečení</h2>
 
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem possimus facilis quae minima autem eius consequuntur quia magnam assumenda, repudiandae commodi deleniti alias, ipsum, quisquam aliquid iusto tenetur suscipit.</p>
 
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minima reiciendis beatae, quo consequatur blanditiis molestiae laborum, at porro ipsum soluta temporibus.</p>
+		</div>
+		</div>
+		
+	</section>
 
 
-
-
-	<!-- Patička -->
-		<p>©2020, Czechitas. Vytvořeno pro kurz Staň se kóderkou.</p>
-
+	<footer>
+		<p class="paticka">©2020, Czechitas. Vytvořeno pro kurz Staň se kóderkou.</p>
+	</footer>
 
 
 </body>

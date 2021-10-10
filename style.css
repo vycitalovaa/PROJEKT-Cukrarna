@@ -117,29 +117,30 @@ section h2 {
 		border-radius: 5px;
 		background-color: white;
 	}
-	
-
+.obrazek {
+	width: 100%;
+}
 .produktflex {
 	display: flex;
 	max-width: 1100px;
 }
 .produkt1 {
 	margin-right: 30px;
-	flex: 1 1 25%;
+	flex: 0 1 calc(100% / 4);
 }
 .produkt2 {
 		margin-left: 30px;
 		margin-right: 30px;
-		flex: 1 1 25%;
+		flex: 0 1 calc(100% / 4);
 			}
 .produkt3 {
 		margin-left: 30px;
 		margin-right: 30px;
-		flex: 1 1 25%;
+		flex: 0 1 calc(100% / 4);
 }
 .produkt4		{
 	margin-left: 30px;
-	flex: 1 1 25%;
+	flex: 0 1 calc(100% / 4);
 }
 
 .text {
